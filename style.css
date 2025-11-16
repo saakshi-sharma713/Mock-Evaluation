@@ -123,5 +123,58 @@ nav{
     padding:20px;
 }
 
+@media(max-width:480px){
+    .container1{
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows:repeat(6,1fr);
+    }
+    .mid-nav{
+        display:none;
+    }
+    .container2{
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows:repeat(8,1fr); 
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .foot1 img{
+        width:400px;
+    } 
+    .logo{
+        display: flex;
+    }
+    .logo img{
+        width:150px;
+    }
+    
 
+}
+@media((min-width:500px)){
+    .container1{
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(3,1fr);
+    }
+      .container2{
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows:repeat(4,1fr); 
+    }
+   .mid-nav{
+        gap:4px;
+    }
+}
+
+@media((min-width:1000px)){
+    .container1{
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
+    }
+      .container2{
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows:repeat(2,1fr); 
+    }
+   .mid-nav{
+        gap:20px;
+    }
+}
 
